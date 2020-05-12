@@ -1,12 +1,29 @@
+/* soft reset do css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color:#084D6E ;
     background-size: auto 100vh;
     font-family: monospace;
-    height: auto 100vw;
+    height: 100vh;
+}
+
+header{
+    height: 100vh;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
     background-color: #4682B4;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
 .menu ul{
@@ -31,8 +48,7 @@ a:hover {
 .site-title{
     color: antiquewhite;
     font-size: xx-large;
-    text-align:center;
-    margin-top:50px
+    text-align:center;  
 }
 
 .site-subtitle{
@@ -42,16 +58,8 @@ a:hover {
     text-align: center;
 }
 
-.video {
-    width: 560px; /* you have to have a size or this method doesn't work */
-    height: 350px; /* think about making these max-width instead - might give you some more responsiveness */
-
-    position: absolute; /* positions out of the flow, but according to the nearest parent */
-    top: 0; right: 0; /* confuse it i guess */
-    bottom: 0; left: 0;
-    margin: auto; /* make em equal */
-    
-    color: antiquewhite;
-    font-size: xx-large;
-    text-align: center;
+.img-portfolio {
+    height: 240px;
+    width: 320px ;
 }
+
