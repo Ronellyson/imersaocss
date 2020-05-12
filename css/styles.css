@@ -26,6 +26,11 @@ header{
     top: 0;
 }
 
+.menu a {
+    display: block;
+    padding: 10px 20px;
+}
+
 .menu ul{
     display: flex;
     justify-content: space-around;
