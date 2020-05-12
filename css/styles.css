@@ -12,6 +12,19 @@ body {
     height: 100vh;
 }
 
+/* se a tela tiver pelo menos 400 px vai carregar esses estilos */
+@media (min-width: 400px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    body {
+      font-size: 22px;
+    }
+  }
+
 header{
     height: 100vh;
     display: flex;   
@@ -22,13 +35,17 @@ header{
 .menu {
     background-color: #4682B4;
     position: fixed;
-    width: 100vw;
     top: 0;
+    width: 100vw;
 }
 
 .menu a {
     display: block;
-    padding: 10px 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: cadetblue;
 }
 
 .menu ul{
@@ -42,7 +59,7 @@ header{
 
 a {
     color: antiquewhite;
-    font-size: xx-large;
+    font-size: large;
     text-decoration: none;
 }
 
@@ -52,14 +69,14 @@ a:hover {
 
 .site-title{
     color: antiquewhite;
-    font-size: xx-large;
     text-align:center;  
 }
 
 .site-subtitle{
     
     color: antiquewhite;
-    font-size: x-large;
+    font-size: 2em;
+    font-weight: lighter;
     text-align: center;
 }
 
