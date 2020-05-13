@@ -13,7 +13,7 @@ body {
 }
 #main{
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(8,77,110,1) 3%);
+    background: linear-gradient(0deg, rgba(248,248,255,1) 0%, rgba(8,77,110,1) 3%);
 }
 
 /* se a tela tiver pelo menos 400 px vai carregar esses estilos */
@@ -62,7 +62,7 @@ header{
 }
 
 a {
-    color: antiquewhite;
+    color:rgb(255,255,255);
     font-size: 1em;
     text-decoration: none;
 }
@@ -72,14 +72,14 @@ a:hover {
 }
 
 .site-title{
-    color: antiquewhite;
+    color: rgb(255,255,255);
     font-size: 2em;
     text-align:center;  
 }
 
 .site-subtitle{
     
-    color: antiquewhite;
+    color:rgb(255,255,255);
     font-size: 2em;
     font-weight: lighter;
     text-align: center;
@@ -93,6 +93,33 @@ a:hover {
 figure{
     margin: 30px;
 }
-#sec-Portigolio{
 
+#div-sobre{
+    align-items: center;
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 320px;
+    margin-right: 320px;
 }
+
+#sec-portfolio{
+margin-top: 10vh;
+}
+
+#div-portfolio{
+    display: flex;
+    justify-content: center;
+    margin: 2px;  
+}
+
+#div-contato{
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 50px; 
+}
+
