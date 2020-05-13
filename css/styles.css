@@ -94,7 +94,7 @@ figure{
     margin: 30px;
 }
 #sec-sobre{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 #div-sobre{
     align-items: center;
@@ -108,7 +108,7 @@ figure{
 }
 
 #sec-portfolio{
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 #div-portfolio{
@@ -117,7 +117,7 @@ figure{
     margin: 2px;  
 }
 #sec-contato{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 #div-contato{
     display: flex;
