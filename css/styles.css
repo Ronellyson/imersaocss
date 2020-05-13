@@ -93,7 +93,9 @@ a:hover {
 figure{
     margin: 30px;
 }
-
+#sec-sobre{
+    margin-top: 30px;
+}
 #div-sobre{
     align-items: center;
     display: flex;
@@ -106,7 +108,7 @@ figure{
 }
 
 #sec-portfolio{
-margin-top: 10vh;
+    margin-top: 100px;
 }
 
 #div-portfolio{
@@ -114,7 +116,9 @@ margin-top: 10vh;
     justify-content: center;
     margin: 2px;  
 }
-
+#sec-contato{
+    margin-top: 30px;
+}
 #div-contato{
     display: flex;
     font-size: 1em;
@@ -122,4 +126,3 @@ margin-top: 10vh;
     margin-top: 2px;
     margin-bottom: 50px; 
 }
-
