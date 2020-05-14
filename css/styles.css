@@ -36,7 +36,7 @@ body {
 
 /* breakpoint */
 
-@media (min-width: 1200px) {
+@media (min-width: 940px) {
   body {
     font-size: 20px;
   }
@@ -83,23 +83,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.titulo {
-  transform: scale(0.2) translateY(50vh);
-  opacity: 0;
-  animation: 0.5s ease 2s animacaoTitulo forwards;
-}
-
-@keyframes animacaoTitulo {
-  from {
-    transform: scale(0.2) translateY(50vh);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1) translateY(0);
-    opacity: 1;
-  }
-}
-
 .site-subtitle, .site-title {
   color: whitesmoke;
   text-align: center;
@@ -111,7 +94,6 @@ a:hover {
 }
 
 .site-subtitle {
-  font-style: italic;
   font-family: monospace;
   line-height: 1.8em;
 }
@@ -120,8 +102,6 @@ a:hover {
   padding: 2em;
   min-height: 2em;
 }
-
-
 
 .contato, .portfolio {
   padding: 2em;
@@ -138,33 +118,53 @@ a:hover {
 
 .portfolio .grid {
   display: grid;
-  gap: 2em;
+  gap: 1em;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
-@media (min-width: 560px) {
-  .portfolio .grid {
-    grid-template-columns: 240px 240px;
+@media (min-width: 400px) {
+  .sobre,
+  .contato,
+  .portfolio {
+    padding: 3em 2em 2em;
+    height: 100vh;
+  }
+
+   .grid {
+    grid-template-columns: 200px 200px;
+    height: calc(100vh - 4.5em - 75px);
+  }
+  .img-portfolio {
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    width: 200px;
   }
 }
 
-@media (min-width: 880px) {
-  .portfolio .grid {
-    grid-template-columns: repeat(3, 260px);
-    align-content: center;
-    justify-content: center;
-    height: calc(100vh - 8em - 48px);
+@media (min-width: 940px) {
+  .sobre,
+  .contato,
+  .portfolio {
+    padding: 2em;
+  }
+
+   .grid {
+    grid-template-columns: repeat(4, 240px);
+    height: calc(100vh - 8em - 75px);
+  }
+  .img-portfolio {
+    border-radius: 10px;
+    height: 158px;
+    object-fit: cover;
+    width: 240px;
   }
 }
 
 .portfolio figure {
   text-align: center;
-}
-
-.img-portfolio {
-  height: 180px;
-  width: 240px;
-  object-fit: cover;
-  object-position: left bottom;
 }
 
 .img-portfolio:hover {
