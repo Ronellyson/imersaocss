@@ -152,14 +152,14 @@ a:hover {
   }
 
    .grid {
-    grid-template-columns: repeat(4, 240px);
-    height: calc(100vh - 8em - 75px);
+    grid-template-columns: repeat(4, 15em);
+    height: calc(100vh - 8em - 1em);
   }
   .img-portfolio {
     border-radius: 10px;
-    height: 158px;
+    height: 10em;
     object-fit: cover;
-    width: 240px;
+    width: 15em;
   }
 }
 
