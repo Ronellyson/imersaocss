@@ -70,9 +70,10 @@ header {
   padding: 10px 20px;
 }
 
-.menu a:hover {
+.menu a:active, .menu a:hover {
   background-color: whitesmoke;
   color: #4682B4;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 a {
@@ -92,16 +93,30 @@ a:hover {
 .site-title {
   font-size: 4em;
   font-family: monospace;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.3;
 }
 
 .site-subtitle {
   font-family: monospace;
   line-height: 1.8em;
+  padding-left: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
+}
+
+.site-title:hover, .site-subtitle:hover {
+  transform: scale(0.7);
+  transition: 0.3s;
 }
 
 .sobre {
   padding: 2em;
-  min-height: 2em;
+  height: 2em;
 }
 
 .contato, .portfolio {
@@ -112,9 +127,20 @@ a:hover {
 .sobre h2, .contato h2, .portfolio h2 {
   color: #4682B4;
   font-family: monospace;
+  font-size: 2em;
   margin-bottom: 1em;
   margin-top: 1em;
+  margin-left: 8em;
+  margin-right: 8em;
+  margin-bottom: 0em;
+  margin-top: 0em;
   text-align: center;
+  padding: 1em;
+}
+
+.sobre h2:hover, .contato h2:hover, .portfolio h2:hover {
+  transform: scale(0.7);
+  transition: 0.3s;
 }
 
 .portfolio .grid {
@@ -126,14 +152,11 @@ a:hover {
 }
 
 @media (min-width: 400px) {
-  .sobre,
-  .contato,
-  .portfolio {
+  .sobre, .contato, .portfolio {
     padding: 3em 2em 2em;
     height: 100vh;
   }
-
-   .grid {
+  .grid {
     grid-template-columns: 200px 200px;
     height: calc(100vh - 4.5em - 75px);
   }
@@ -146,21 +169,18 @@ a:hover {
 }
 
 @media (min-width: 940px) {
-  .sobre,
-  .contato,
-  .portfolio {
+  .sobre, .contato, .portfolio {
     padding: 2em;
   }
-
-   .grid {
-    grid-template-columns: repeat(4, 15em);
+  .grid {
+    grid-template-columns: repeat(4, 11em);
     height: calc(100vh - 8em - 1em);
   }
   .img-portfolio {
     border-radius: 10px;
-    height: 10em;
+    height: 9em;
     object-fit: cover;
-    width: 15em;
+    width: 11em;
   }
 }
 
@@ -169,7 +189,8 @@ a:hover {
 }
 
 .img-portfolio:hover {
-  transform: scale(1.2) rotate(-2deg);
+  transform: scale(1.2) scale(0.75);
+  transition: 0.5s;
 }
 
 .contato .icons {
@@ -179,7 +200,7 @@ a:hover {
 .contato a {
   color: #4682B4;
   font-size: 4em;
-  transition: text-shadow 1s;
+  transition: text-shadow 0.3s;
 }
 
 .contato a:active, .contato a:hover {
