@@ -129,7 +129,7 @@ a:hover {
 
 .portfolio {
   padding: 2em;
-  min-height: 100em;
+  min-height: 50em;
 }
 
 .contato h2 {
@@ -172,7 +172,7 @@ a:hover {
 @media (min-width: 400px) {
   .portfolio {
     padding: 3em 2em 2em;
-    height: 100em;
+    Min-height: 50em;
   }
   .contato {
     padding: 3em 2em 2em;
@@ -197,7 +197,7 @@ a:hover {
 @media (min-width: 940px) {
   .portfolio {
     padding: 2em 2em 2em;
-    height: 100em;
+    Min-height: 50em;
   }
   .contato {
     padding: 3em 2em 2em;
