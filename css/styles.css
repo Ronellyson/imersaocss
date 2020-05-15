@@ -116,12 +116,12 @@ a:hover {
 
 .sobre {
   padding: 2em;
-  height: 25em;
+  min-height: 20em;
 }
 
 .contato {
   padding: 2em;
-  min-height: 25em;
+  min-height: 20em;
 }
 
 .portfolio {
@@ -165,7 +165,7 @@ a:hover {
   }
   .sobre {
     padding: 3em 2em 2em;
-    height: 25em;
+    min-height: 20em;
   }
   .portfolio-grid {
     grid-template-columns: 200px 200px;
@@ -181,8 +181,8 @@ a:hover {
 
 @media (min-width: 940px) {
   .portfolio {
-    padding: 3em 2em 2em;
-    height: 100vh;
+    padding: 2em 2em 2em;
+    height: 25em;
   }
   .contato {
     padding: 3em 2em 2em;
@@ -190,7 +190,7 @@ a:hover {
   }
   .sobre {
     padding: 3em 2em 2em;
-    height: 25em;
+    min-height: 20em;
   }
   .portfolio-grid {
     grid-template-columns: repeat(4, 11em);
