@@ -119,7 +119,12 @@ a:hover {
   height: 25em;
 }
 
-.contato, .portfolio {
+.contato {
+  padding: 2em;
+  min-height: 25em;
+}
+
+.portfolio {
   padding: 2em;
   min-height: 100vh;
 }
@@ -141,7 +146,7 @@ a:hover {
   transition: 0.3s;
 }
 
-.portfolio .grid {
+.portfolio .portfolio-grid {
   display: grid;
   gap: 1em;
   align-content: center;
@@ -150,18 +155,21 @@ a:hover {
 }
 
 @media (min-width: 400px) {
-  .contato, .portfolio {
+  .portfolio {
     padding: 3em 2em 2em;
     height: 100vh;
 
   }
-  
+  .contato{
+    padding: 3em 2em 2em;
+    height: 25em;
+  }
   .sobre{
     padding: 3em 2em 2em;
     height: 25em;
   }
 
-  .grid {
+  .portfolio-grid {
     grid-template-columns: 200px 200px;
     height: calc(100vh - 4.5em - 75px);
   }
@@ -174,18 +182,21 @@ a:hover {
 }
 
 @media (min-width: 940px) {
-  .contato, .portfolio {
+   .portfolio {
     padding: 3em 2em 2em;
     height: 100vh;
 
   }
-  
+  .contato{
+    padding: 3em 2em 2em;
+    height: 25em;
+  }
   .sobre{
     padding: 3em 2em 2em;
     height: 25em;
   }
 
-  .grid {
+ .portfolio-grid {
     grid-template-columns: repeat(4, 11em);
     height: calc(100vh - 8em - 1em);
   }
@@ -208,6 +219,10 @@ a:hover {
 
 .contato .icons {
   text-align: center;
+}
+
+.grid-icons{
+width: 25em;
 }
 
 .contato a {
