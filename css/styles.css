@@ -219,7 +219,7 @@ a:hover {
   }
   .sobre {
     padding: 3em 2em 2em;
-    min-height: 8em;
+    min-height: 10em;
   }
   .portfolio-grid {
     grid-template-columns: repeat(4, 11em);
