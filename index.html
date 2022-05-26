@@ -30,8 +30,7 @@
     <section class="sobre container" id="sobre">
         <h2>Sobre</h2>
 
-        <p> Nasci no município de Guarabira do estado da Paraíba, tenho 20 anos e estou cursando Sistemas de
-            Informação no campus IV da UFPB, em Rio tinto-PB.
+        <p class="sobreContent">
         </p>
 
     </section>
@@ -99,5 +98,14 @@
         </div>
     </section>
 </body>
+
+<script type="text/javascript">
+    const dataAtual = new Date();
+    const anoNascimento = 2002;
+    let idade = (dataAtual.getFullYear()) - anoNascimento;
+    const sobre = document.querySelector(".sobreContent");
+    sobre.innerHTML = ` Nasci no município de Guarabira do estado da Paraíba, tenho ${idade} anos e estou cursando Sistemas de
+            Informação no campus IV da UFPB, em Rio tinto-PB.`
+</script>
 
 </html>
