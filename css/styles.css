@@ -183,6 +183,7 @@ a:hover {
 .portfolio-grid {
   display: grid;
   gap: 1em;
+  width:100%;
   align-content: center;
   justify-content: center;
   text-align: center;
