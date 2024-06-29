@@ -228,7 +228,7 @@ a:hover {
     min-height: 10em;
   }
   .portfolio-grid {
-    grid-template-columns: repeat(4, 11em);
+    grid-template-columns: repeat(3, 11em);
     height: calc(30em - 8em - 1em);
   }
   .img-portfolio {
